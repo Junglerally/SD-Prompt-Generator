@@ -4,11 +4,11 @@ prompts = {
 
     "adjectives": {
 
-        "visadjcts": ['pretty', 'relaxing', 'calm', 'quiet', 'wonderful', 'nice', 'incredible', 'amazing', 'cozy', 'beautiful', 'ominous', 'gloomy', 'post-apocalyptic', 'warm', 'stunning', 'breathtaking', 'fascinating', 'peaceful', 'surreal', 'celestial', 'ancient', 'ethereal', 'dramatic', 'horrific', 'terrifying', 'emotional', 'dystopian', 'dark', 'magical', 'psychedelic', 'apocalyptic', 'fantasy', 'dark fantasy', 'alien', 'otherworldly', 'foggy', 'Victorian', 'trippy', 'desolate', 'eldritch', 'gothic', 'futuristic', 'snowy', 'fantastical', 'lush', 'mysterious', 'icy', 'fiery', 'grand', 'western',],
+        "visadjcts": ['pretty', 'relaxing', 'calm', 'quiet', 'wonderful', 'nice', 'incredible', 'amazing', 'cozy', 'beautiful', 'ominous', 'gloomy', 'post-apocalyptic', 'warm', 'stunning', 'breathtaking', 'fascinating', 'peaceful', 'surreal', 'celestial', 'ancient', 'ethereal', 'dramatic', 'horrific', 'terrifying', 'emotional', 'dystopian', 'dark', 'magical', 'psychedelic', 'apocalyptic', 'fantasy', 'dark fantasy', 'alien', 'otherworldly', 'foggy', 'Victorian', 'trippy', 'desolate', 'eldritch', 'gothic', 'futuristic', 'snowy', 'fantastical', 'lush', 'mysterious', 'icy', 'fiery', 'grand', 'western', 'bright', 'fair', 'filthy', 'pleasant', 'glamorous', 'quaint', 'colorful', 'wild', 'magnificent', ],
 
-        "objadjcts": ['futuristic', 'glowing', 'ornate', 'scuffed', 'pristine', 'rustic', 'floral', 'intricate', 'smooth', 'shiny', 'dusty', 'dirty', 'colorful', 'high-tech', 'modern', 'cute', 'magical', 'ancient', 'detailed', 'refined', 'unique', 'vintage', 'polished', 'elegant', 'sophisticated', 'complex', 'damaged', 'worn', 'weathered', 'archaic', 'stealthy'],
+        "objadjcts": ['futuristic', 'glowing', 'ornate', 'scuffed', 'pristine', 'rustic', 'floral', 'intricate', 'smooth', 'shiny', 'dusty', 'dirty', 'colorful', 'high-tech', 'modern', 'cute', 'magical', 'ancient', 'detailed', 'refined', 'unique', 'vintage', 'polished', 'elegant', 'sophisticated', 'complex', 'damaged', 'worn', 'weathered', 'archaic', 'stealthy', 'miniscule', 'small', 'medium', 'large', 'massive', 'humongous', 'bulbous', 'chunky', 'flat', 'rugged', 'purple', 'red', 'blue', 'green', 'yellow', 'black', 'white', 'gray', 'pink', 'orange', 'neon', 'powerful', 'long', 'wide', ],
 
-        "charadjcts": ['armored', 'heavily armored', 'divine', 'cyborg', 'medieval', 'steampunk', 'stylish', 'angelic', 'female', 'male', 'confused', 'lost', 'old', 'young', 'attractive', 'intimidating', 'battered', 'cute', 'modern', 'dirty', 'scarred', 'determined', 'bearded', 'caped', 'shrouded', 'Latin American', 'Caucasian', 'African', 'Indian', 'Arab', 'Asian', 'happy', 'overjoyed', 'lone', 'joyful', 'sad', 'pensive', 'evil', 'bloody', 'robed', 'fashionable', 'tough', 'masked', 'tattooed', 'crazy', 'shadowed', 'elegant', 'stealthy', 'western',],
+        "charadjcts": ['armored', 'heavily armored', 'divine', 'cyborg', 'medieval', 'steampunk', 'stylish', 'angelic', 'female', 'male', 'confused', 'lost', 'old', 'young', 'attractive', 'intimidating', 'battered', 'cute', 'modern', 'dirty', 'scarred', 'determined', 'bearded', 'caped', 'shrouded', 'Latin American', 'Caucasian', 'African', 'Indian', 'Arab', 'Asian', 'happy', 'overjoyed', 'lone', 'joyful', 'sad', 'pensive', 'evil', 'bloody', 'robed', 'fashionable', 'tough', 'masked', 'tattooed', 'crazy', 'shadowed', 'elegant', 'stealthy', 'western', 'cute', 'beautiful', 'pretty', 'gorgeous', 'mature', 'chic', 'classy', 'ethereal', 'buff', 'chiseled', 'petite', 'goth', 'old-fashioned', 'bald', 'dapper', 'elven', 'dwarven', ],
 
     },
 
@@ -16,19 +16,19 @@ prompts = {
 
         "characters": {
 
-            "people": ['man', 'woman', 'girl', 'boy', 'assassin', 'bounty hunter', 'knight', 'stormtrooper', 'robot', 'soldier', 'man', 'woman', 'samurai', 'vampire', 'catgirl', 'wolf girl', 'cowgirl', 'cowboy', 'jedi', 'warrior', 'sorcerer', 'human woman', 'human man', 'human girl', 'human boy', 'prince', 'princess', 'king', 'queen', 'god', 'goddess', 'demigod', 'survivor', 'villain', 'hero', 'traveler', 'spaceman', 'space marine', 'explorer', 'wayfarer', 'chef', 'swordsman', 'scout', 'schoolgirl', 'schoolboy', 'motorcyclist', 'hunter', 'demon', 'angel', 'pilot', 'crewman', 'fox girl', 'wizard', 'emperor', 'viking', 'ninja', 'alien', 'businessman', 'guard', 'operative', 'scientist', 'police officer', 'serial killer', 'cultist', 'romantic couple', 'friends', 'spirit', 'crewwoman', 'Little Red Riding Hood', 'chancellor', 'witch', 'pirate', ],
+            "people": ['man', 'woman', 'girl', 'boy', 'assassin', 'bounty hunter', 'knight', 'stormtrooper', 'robot', 'soldier', 'man', 'woman', 'samurai', 'vampire', 'catgirl', 'wolf girl', 'cowgirl', 'cowboy', 'jedi', 'warrior', 'sorcerer', 'human woman', 'human man', 'human girl', 'human boy', 'prince', 'princess', 'king', 'queen', 'god', 'goddess', 'demigod', 'survivor', 'villain', 'hero', 'traveler', 'spaceman', 'space marine', 'explorer', 'wayfarer', 'chef', 'swordsman', 'scout', 'schoolgirl', 'schoolboy', 'motorcyclist', 'hunter', 'demon', 'angel', 'pilot', 'crewman', 'fox girl', 'wizard', 'emperor', 'viking', 'ninja', 'alien', 'businessman', 'guard', 'operative', 'scientist', 'police officer', 'serial killer', 'cultist', 'romantic couple', 'friends', 'spirit', 'crewwoman', 'Little Red Riding Hood', 'chancellor', 'witch', 'pirate', 'captain', 'gamer', 'military general', 'farmer', 'archer', 'athlete', 'baker', 'librarian', 'ballerina', 'blacksmith', 'butler', 'dictator', 'doctor', 'DJ', 'musician', 'fisherman', 'firefighter', 'hobo', 'detective', 'spy', 'jester', 'magician', 'maid', 'nurse', 'lifeguard', 'student', 'surgeon', 'treasure hunter', 'waiter', 'valkyrie', 'angel', ],
 
-            "charobjects": ['knife', 'weapon', 'flower', 'plushie', 'mirror', 'glass', 'shadow', 'cape', 'backpack', 'dress', 'suit', 'bodysuit', 'artifact', 'map', 'fighter', 'sword', 'carbine', 'smartphone', 'book', 'walking stick', 'drink', 'lantern', 'mask', 'gas mask', 'hat', 'tattoos', 'guitar', 'crystal', 'gem', 'ring', 'jewelry', 'bandana', 'amulet', 'shield', 'pouch', 'headphones', 'gloves', 'scarf',],
+            "charobjects": ['knife', 'weapon', 'flower', 'plushie', 'mirror', 'glass', 'shadow', 'cape', 'backpack', 'dress', 'suit', 'bodysuit', 'artifact', 'map', 'fighter', 'sword', 'carbine', 'smartphone', 'book', 'walking stick', 'drink', 'lantern', 'mask', 'gas mask', 'hat', 'tattoos', 'guitar', 'crystal', 'gem', 'ring', 'jewelry', 'bandana', 'amulet', 'shield', 'pouch', 'headphones', 'gloves', 'scarf', 'tophat', 'monocle', 'scroll', 'dagger', 'skirt', 'tiara', 'crown', 'staff', 'wand', 'belt', 'cell phone', 'broom', 'pitchfork', ],
 
         },
         
         "creatures": {
 
-            "land_creatures": ['dog', 'cat', 'frog', 'Oni', 'golem', 'unicorn', 'pegasus', 'basilisk', 'hellhound', 'gnome', 'fairy', 'skinwalker', 'bigfoot', 'hamster', 'eagle', 'raccoon', 'opossum', 'tiger', 'panther', 'wendigo', 'dwarf', 'goblin', 'chimera', 'kitsune', 'bunny', 'serpent', 'horse', 'jinn', 'minotaur', 'mammoth', 'deer', 'Anubis', 'monster', 'werewolf', 'elephant',],
+            "land_creatures": ['dog', 'cat', 'frog', 'Oni', 'golem', 'unicorn', 'pegasus', 'basilisk', 'hellhound', 'gnome', 'fairy', 'skinwalker', 'bigfoot', 'hamster', 'eagle', 'raccoon', 'opossum', 'tiger', 'panther', 'wendigo', 'dwarf', 'goblin', 'chimera', 'kitsune', 'bunny', 'serpent', 'horse', 'jinn', 'minotaur', 'mammoth', 'deer', 'Anubis', 'monster', 'werewolf', 'elephant', 'ogre', 'monkey', 'bear', 'giraffe', 'hedgehog', 'hamster', 'meerkat', 'naga', ],
 
-            "air_creatures": ['phoenix', 'hawk', 'eagle', 'bat', 'owl', 'hummingbird', 'bird', 'bee', 'bumblebee', 'dragon', 'griffin',],
+            "air_creatures": ['phoenix', 'hawk', 'eagle', 'bat', 'owl', 'hummingbird', 'bird', 'bee', 'bumblebee', 'dragon', 'griffin', 'raven', 'crow', 'wyvern', 'pegasus', 'harpy', 'fairy', ],
 
-            "sea_creatures": ['shark', 'Cthulu', 'kraken', 'megalodon', 'fish', 'octopus', 'Lochness Monster', 'sea monster', 'giant squid', 'deep sea giant isopod', 'crab', 'lobster', 'mermaid', 'leviathan', 'water dragon',],
+            "sea_creatures": ['shark', 'Cthulu', 'kraken', 'megalodon', 'fish', 'octopus', 'Lochness Monster', 'sea monster', 'giant squid', 'deep sea giant isopod', 'crab', 'lobster', 'mermaid', 'leviathan', 'water dragon', 'sea serpent', 'eel', ],
 
         },
         
@@ -80,9 +80,9 @@ prompts = {
 
             "land": ['near a', 'in a', 'next to a', 'in front of a', 'inside of a', 'outside of a',],
 
-            "air_creatures": ['flying above a', 'flying by a', 'flying in front of a', 'flying past a', 'perched by a',],
+            "air_creatures": ['flying above a', 'flying by a', 'flying in front of a', 'flying past a', 'perched by a', 'perched on a', ],
 
-            "air_objects": ['flying above a', 'flying by a', 'flying in front of a', 'flying past a', 'landing by a', 'flying close above a',],
+            "air_objects": ['flying above a', 'flying by a', 'flying in front of a', 'flying past a', 'landing by a', 'flying close above a', 'hovering above a', ],
 
             "space_objects": ['orbiting a', 'flying towards a', 'flying in a', 'docking with a', 'in a', 'flying by a', 'flying by a', 'floating by a', 'flying in front of a', 'orbiting in front of a'],
         },
@@ -90,9 +90,9 @@ prompts = {
 
     "vismodifiers": {
 
-        "styles": ['oil painting', 'minimalistic', 'natural', 'colored', '35mm', 'award-winning photography', 'cinematic lighting', 'limited palette', 'pastel colors', 'cyberpunk', 'render', 'rendered in unreal engine', 'photo', 'glitch art', 'space art', 'high contrast', 'low contrast', 'epic composition', 'nighttime', 'vivid colors', 'soft lighting', 'wavy', 'extradimensional', 'depth of field', 'tonemapping', 'illustration', 'digital painting', 'line art', 'ink', 'color field painting', 'god rays', 'saturated', 'desaturated', 'tonal colors', 'full body', 'eyes focus', 'anime', 'aerial view', 'street level view', 'panoramic', 'hard edge', 'thick lines', 'color page', 'precise lineart', 'neon lighting', 'sun rays', 'nostalgic', 'brutalism', 'high resolution scan', 'winter', 'spring', 'autumn', 'summer', 'studio lighting', 'bokeh', 'motion lines', 'wallpaper', 'muted colors', 'colorgrading', 'vintage', 'aesthetic', 'cosmic horror', 'abstract art', 'simple background', 'synthwave', 'splatter paint style', 'portrait', 'vaporwave', 'concept art', 'cartoon', 'simplistic', 'dim', 'blurred background', 'ambient lighting', 'intense shadows', 'slow motion', 'reflections', 'detailed face', 'animecore', 'astrophotography', 'biomechanical', 'darkwave', 'deathpunk', 'glitchcore', 'glowwave', 'holographic', 'beautifully lit', 'technopunk', 'sci-fi', 'crystalline'],
+        "styles": ['oil painting', 'minimalistic', 'natural', 'colored', '35mm', 'award-winning photography', 'cinematic lighting', 'limited palette', 'pastel colors', 'cyberpunk', 'render', 'rendered in unreal engine', 'photo', 'glitch art', 'space art', 'high contrast', 'low contrast', 'epic composition', 'nighttime', 'vivid colors', 'soft lighting', 'wavy', 'extradimensional', 'depth of field', 'tonemapping', 'illustration', 'digital painting', 'line art', 'ink', 'color field painting', 'god rays', 'saturated', 'desaturated', 'tonal colors', 'full body', 'eyes focus', 'anime', 'aerial view', 'street level view', 'panoramic', 'hard edge', 'thick lines', 'color page', 'precise lineart', 'neon lighting', 'sun rays', 'nostalgic', 'brutalism', 'high resolution scan', 'winter', 'spring', 'autumn', 'summer', 'studio lighting', 'bokeh', 'motion lines', 'wallpaper', 'muted colors', 'colorgrading', 'vintage', 'aesthetic', 'cosmic horror', 'abstract art', 'simple background', 'synthwave', 'splatter paint style', 'portrait', 'vaporwave', 'concept art', 'cartoon', 'simplistic', 'dim', 'blurred background', 'ambient lighting', 'intense shadows', 'slow motion', 'reflections', 'detailed face', 'animecore', 'astrophotography', 'biomechanical', 'darkwave', 'deathpunk', 'glitchcore', 'glowwave', 'holographic', 'beautifully lit', 'technopunk', 'sci-fi', 'crystalline', 'movie still', 'animation', '3d', '2d', 'claymation', 'woodcut painting', 'charcoal sketch', 'low poly', 'blender render', 'isometric', '', ],
 
-        "genmetas": ['realistic', '8k', '4k', 'detailed', 'hyperdetailed', 'sharp focus', 'masterpiece', 'absurdres', 'highres', 'professional', 'photorealism', 'studio quality', 'HQ', 'UHD', 'HDR',],
+        "genmetas": ['realistic', '8k', '4k', 'detailed', 'hyperdetailed', 'sharp focus', 'masterpiece', 'absurdres', 'highres', 'professional', 'photorealism', 'studio quality', 'HQ', 'UHD', 'HDR', ],
 
     },
 }
