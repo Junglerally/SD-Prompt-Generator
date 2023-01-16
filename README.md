@@ -1,5 +1,5 @@
 # SD-Prompt-Generator
-A complete expansion of javi22020's Prompt Generator script that tries to create random prompts with a structure that works well for providing inspiration. Currently generates prompts of random characters, objects/vehicles, and creatures, with random locations and visual styles. Good for instant, semi-hand-picked randomized inspiration with minimal effort and no clunk or wasted time.
+A complete expansion of javi22020's Prompt Generator script that tries to create random prompts with a structure that works well for providing inspiration. Currently generates semi-curated randomized prompts of characters, objects/vehicles, and creatures, with random locations and visual styles. Get instant inspiration with minimal energy and no clunk or wasted time.
 
 The [bad-artist](https://huggingface.co/nick-x-hacker/bad-artist) negative embeddings are recommended if you use a Stable Diffusion UI.
 
