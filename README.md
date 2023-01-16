@@ -17,11 +17,23 @@ To add or remove phrases, or edit how many are tacked on the main prompt, edit t
 
 Naturally, certain phrases will be better understood by different models. For instance, "catgirl" and "splash paint art" are represented much better in anime-based models than models that focus more on realistic art.
 
-## Prompt explanation and examples
+## The prompts
 
-The usefulness of "quality prompts" (e.g. realistic, masterpiece, professional) despite their widespread application is debatable, but they are included nonetheless as they sometimes improve the detail of outfits and sense of depth. The general adjectives add randomness to the output, but also can influence the overall visual impression of an image. I recommend using the [bad-artist](https://huggingface.co/nick-x-hacker/bad-artist) embeddings in your negative prompt, as these seem to help prevent over-representation of adjectives in the AI's output. For instance, without those 'negative embeddings', "terrifying" will make characters, well, terrifying, even if it's meant to be describing the setting.
+This script provides a variety of randomly-selected adjectives, subjects (characters, objects, creatures), settings (locations), and visual style and quality phrases. The general adjectives add randomness to the output, but also can influence the overall visual impression of an image similar to the styles. The usefulness of "quality prompts" (e.g. realistic, masterpiece, professional) despite their widespread application is debatable, but they are included nonetheless as they sometimes improve the detail of outfits and sense of depth.
+
+I recommend using the [bad-artist](https://huggingface.co/nick-x-hacker/bad-artist) embeddings in your negative prompt, as these seem to help prevent over-representation of adjectives in the AI's output. For instance, without those 'negative embeddings', "terrifying" will make characters, well, terrifying, even if it's meant to be describing the setting.
 
 The expanded prompt list was built off of personal experience after thousands of images generated with Stable Diffusion v1.5-based models. Artist names and existing IP were intentionally avoided for style and quality prompts to focus on getting decent-quality output off creativity alone.
+
+## Tips + examples
+
+If you use prompts directly without editing them, your mileage will vary depending on the model and prompt. Objects and creatures may be hard to get looking right. A UI that has attention weighting and inpainting, like [InvokeAI](https://github.com/invoke-ai/InvokeAI/), will go a long way if you like a particular prompt that isn't coming out right immediately.
+
+As you can expect, model matters a lot. Some good general-purpose models (read: not focused on an artist's work or specific objects or styles), such as [Elldreth's StolenDreams](https://civitai.com/models/2540/elldreths-stolendreams-mix), [TheAlly's Mix II](https://civitai.com/models/3848/theallys-mix-ii-churned), [Anything and Everything](https://civitai.com/models/3661/anything-and-everything-mix-ver-15), and [Kenshi](https://civitai.com/models/3850/kenshi) work great for a lot of prompts. Some specific prompts are best tackled with a more focused model, like [Sci-Fi Diffusion](https://civitai.com/models/4404/sci-fi-diffusion-v10) for prompts of spaceships and other high-tech subjects/styles.
+
+Good luck!
+
+Below are some examples of images with good copy-pasted prompts made by the script, using a couple 'negative embeddings':
 
 ![003659 099091dd 3062602010](https://user-images.githubusercontent.com/122599135/212419237-8c5f4942-388b-43d0-8390-c5dfae3aff34.png)
 
@@ -35,6 +47,12 @@ The expanded prompt list was built off of personal experience after thousands of
 
 `Model: Elldreth's Stolen Dreams`
 
+![004205 2a48a3a0 3235613962](https://user-images.githubusercontent.com/122599135/212576997-24572de2-eba8-4c3a-8e8e-0bb943260e1b.png)
+
+`dystopian kraken in the high seas, icy, fiery, fantastical, dim, beautifully lit, pastel colors, photorealism, studio quality, detailed, professional [sketch by bad-artist, art by bad-artist-anime, bad-hands-5, text, logo, signature]
+
+`Model: TheAlly's Mix II`
+
 ![003689 18c8966b 2537436940](https://user-images.githubusercontent.com/122599135/212424493-770e5ccc-35f7-4c0f-9c8b-1d88b3cc8ba0.png)
 
 `heavily armored alien with a dystopian bodysuit near a shiny cockpit, Victorian, beautiful, scuffed, thick lines, wallpaper, anime, studio quality, UHD, detailed, highres [sketch by bad-artist, art by bad-artist-anime, bad-hands-5]`
@@ -47,6 +65,12 @@ The expanded prompt list was built off of personal experience after thousands of
 
 `Model: Kenshi`
 
+![004288 d44783df 3782731203](https://user-images.githubusercontent.com/122599135/212577489-c7fad369-c649-4969-9a11-fbe863f42d0f.png)
+
+`sophisticated dreadnought in a large river, snowy, dark fantasy, apocalyptic, wallpaper, mysterious, portrait, masterpiece, 8k, hyperdetailed, photorealism [sketch by bad-artist, art by bad-artist-anime, bad-hands-5]`
+
+`Model: Elldreth's Stolen Dreams`
+
 ![003703 1ed7680d 2859117530](https://user-images.githubusercontent.com/122599135/212426057-851353dc-5874-4c7a-8251-fabd28771577.png)
 
 `Asian pilot with a ancient glass near a magical snowstorm, ethereal, trippy, emotional, neon lighting, epic composition, wavy, detailed, masterpiece, realistic, photorealism [sketch by bad-artist, art by bad-artist-anime, bad-hands-5]`
@@ -55,6 +79,8 @@ The expanded prompt list was built off of personal experience after thousands of
 
 ## Changelog
 
-~3 AM 1/15: Complete restructuring of script. Now supports selection for character prompts, large object/vehicle prompts, and creature prompts. If you select object or creature, the script will randomly select from a type of object or creature and randomly select a relevant setting for that type of object or creature.
+~8 PM 1/15: Merged pull request with a bunch of new words.
+
+~3 AM 1/15: Complete restructuring of script. Now supports selection for character prompts, large object/vehicle prompts, and creature prompts. If you select object or creature, the script will randomly select from a type of object or creature and randomly select an appropriate setting.
 
 ~10 PM 1/13: New prompt phrases across the board for variety and a couple fixes in the list. Added new category for object adjectives to improve prompt generation consistency. Should be better now. Updated readme.
