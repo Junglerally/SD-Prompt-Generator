@@ -104,7 +104,7 @@ numquality = 4
 def main(prompts):
     while True:
         #List of random visual impression adjectives from above number
-        prompt_type = input("Enter '1' for character-focused prompt, '2' for object-focused prompt, '3' for creature-focused prompt, or '0' to stop the script: ")
+        prompt_type = input("Enter '1' for character-focused prompt, '2' for object-focused prompt, '3' for creature-focused prompt, or '0' to stop the script. If you wish to change prompt settings, enter 's' : ")
         if prompt_type == '1':
             again = True
             while again: 
@@ -126,6 +126,9 @@ def main(prompts):
                 giveprompt(prompts, prompt, numstyles, numquality)
                 repeat = input("Press 'Enter' for another creature-focused prompt, or any other key + 'Enter' to return: ")
                 again = repeat == ''
+        elif prompt_type == 's':
+            changesettings()
+
         elif prompt_type == '0':
             break
 
@@ -174,6 +177,41 @@ def giveprompt(prompts, prompt, numstyles, numquality):
             print()
             print(prompt)
             print()
+
+def changesettings():
+    global numadjectives
+    global numstyles
+    global numquality
+
+    changing_settings = True;
+    while changing_settings:
+            setting_to_change = input("Enter the number corresponding to the setting you want to change; '1' for the number of adjectives, '2' for the number of styles, and '3' for quality modifiers : ")
+            if setting_to_change == '1':
+                inputting = True
+                while inputting:
+                    setting_value = int(input("Enter a value : "))
+                    numadjectives = setting_value
+                    inputting = False
+
+            elif setting_to_change == '2':
+                inputting = True
+                while inputting:
+                    setting_value = int(input("Enter a value : "))
+                    numstyles = setting_value
+                    inputting = False
+
+            elif setting_to_change == '3':
+                inputting = True
+                while inputting:
+                    setting_value = int(input("Enter a value : "))
+                    numquality = setting_value
+                    inputting = False
+
+            print('Adjectives: ', numadjectives, ' , Styles: ', numstyles, ' , Quality modifiers: ', numquality)
+            repeat = input("Press 'Enter' to change another setting, or any other key + 'Enter' to return: ")
+            changing_settings = repeat == ''
+    
+
 
 if __name__ == "__main__":
     main(prompts)
