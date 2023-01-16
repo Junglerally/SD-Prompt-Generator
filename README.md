@@ -49,7 +49,7 @@ Below are some examples of images with good copy-pasted prompts made by the scri
 
 ![004205 2a48a3a0 3235613962](https://user-images.githubusercontent.com/122599135/212576997-24572de2-eba8-4c3a-8e8e-0bb943260e1b.png)
 
-`dystopian kraken in the high seas, icy, fiery, fantastical, dim, beautifully lit, pastel colors, photorealism, studio quality, detailed, professional [sketch by bad-artist, art by bad-artist-anime, bad-hands-5, text, logo, signature]
+`dystopian kraken in the high seas, icy, fiery, fantastical, dim, beautifully lit, pastel colors, photorealism, studio quality, detailed, professional [sketch by bad-artist, art by bad-artist-anime, bad-hands-5, text, logo, signature]`
 
 `Model: TheAlly's Mix II`
 
