@@ -1,5 +1,7 @@
 # SD-Prompt-Generator
-A complete expansion of javi22020's Prompt Generator script that tries to create random prompts with a structure that works well for providing inspiration. Currently generates prompts of random characters, objects/vehicles, and creatures, with random locations and visual styles. The [bad-artist](https://huggingface.co/nick-x-hacker/bad-artist) negative embeddings are recommended.
+A complete expansion of javi22020's Prompt Generator script that tries to create random prompts with a structure that works well for providing inspiration. Currently generates prompts of random characters, objects/vehicles, and creatures, with random locations and visual styles. Good for instant, semi-hand-picked randomized inspiration with minimal effort and no clunk or wasted time.
+
+The [bad-artist](https://huggingface.co/nick-x-hacker/bad-artist) negative embeddings are recommended if you use a Stable Diffusion UI.
 
 ## Usage
 
@@ -21,15 +23,15 @@ Naturally, certain phrases will be better understood by different models. For in
 
 This script provides a variety of randomly-selected adjectives, subjects (characters, objects, creatures), settings (locations), and visual style and quality phrases. The general adjectives add randomness to the output, but also can influence the overall visual impression of an image similar to the styles. The usefulness of "quality prompts" (e.g. realistic, masterpiece, professional) despite their widespread application is debatable, but they are included nonetheless as they sometimes improve the detail of outfits and sense of depth.
 
-I recommend using the [bad-artist](https://huggingface.co/nick-x-hacker/bad-artist) embeddings in your negative prompt, as these seem to help prevent over-representation of adjectives in the AI's output. For instance, without those 'negative embeddings', "terrifying" will make characters, well, terrifying, even if it's meant to be describing the setting.
+I recommend using the [bad-artist](https://huggingface.co/nick-x-hacker/bad-artist) embeddings in your negative prompt, as these seem to help prevent over-representation of adjectives in the AI's output. For instance, without those 'negative embeddings', "terrifying" will often make characters, well, terrifying, even if it's meant to be describing the setting.
 
-The expanded prompt list was built off of personal experience after thousands of images generated with Stable Diffusion v1.5-based models. Artist names and existing IP were intentionally avoided for style and quality prompts to focus on getting decent-quality output off creativity alone.
+Much of the expanded prompt list was built off of personal experience after thousands of images generated with Stable Diffusion v1.5-based models. Artist names and existing IP were intentionally avoided for style and quality prompts to focus on getting decent-quality output off creativity alone.
 
 ## Tips + examples
 
-If you use prompts directly without editing them, your mileage will vary depending on the model and prompt. Objects and creatures may be hard to get looking right. A UI that has attention weighting and inpainting, like [InvokeAI](https://github.com/invoke-ai/InvokeAI/), will go a long way if you like a particular prompt that isn't coming out right immediately.
+If you use prompts directly without editing them, your mileage will vary depending on the model and prompt. Objects and creatures may be hard to get looking right sometimes. A UI that has attention weighting and inpainting, like [InvokeAI](https://github.com/invoke-ai/InvokeAI/), will go a long way if you like a particular prompt that isn't coming out right immediately.
 
-As you can expect, model matters a lot. Some good general-purpose models (read: not focused on an artist's work or specific objects or styles), such as [Elldreth's StolenDreams](https://civitai.com/models/2540/elldreths-stolendreams-mix), [TheAlly's Mix II](https://civitai.com/models/3848/theallys-mix-ii-churned), [Anything and Everything](https://civitai.com/models/3661/anything-and-everything-mix-ver-15), and [Kenshi](https://civitai.com/models/3850/kenshi) work great for a lot of prompts. Some specific prompts are best tackled with a more focused model, like [Sci-Fi Diffusion](https://civitai.com/models/4404/sci-fi-diffusion-v10) for prompts of spaceships and other high-tech subjects/styles.
+As you can expect, model matters a lot. Some good general-purpose models (read: not focused on an artist's work or specific objects), such as [Elldreth's StolenDreams](https://civitai.com/models/2540/elldreths-stolendreams-mix), [AyoniMix](https://civitai.com/models/4550/ayonimix), [TheAlly's Mix II](https://civitai.com/models/3848/theallys-mix-ii-churned), and [Kenshi](https://civitai.com/models/3850/kenshi) work great for a lot of prompts. Some specific prompts are best tackled with a more focused model, like [Sci-Fi Diffusion](https://civitai.com/models/4404/sci-fi-diffusion-v10) for prompts of spaceships and other high-tech subjects/styles.
 
 Good luck!
 
