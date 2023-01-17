@@ -246,7 +246,7 @@ prompts = {
 numadjectives = 3
 numstyles = 3
 numquality = 4
-usepromptmatrix = True
+usepromptmatrix = False
 
 
 def main(prompts):
