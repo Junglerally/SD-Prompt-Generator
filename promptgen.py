@@ -145,7 +145,8 @@ prompts = {
                     'prison', 'factory', 'canyon', 'church', 'colosseum', 'roller coaster', 'palace', 'bridge',
                     'tundra', 'aquarium', 'military base', 'sea', 'ocean', 'navy'],
 
-            # Sea creature settings and object relations are combined for sake of making sense in output. Feel free to change this if you wish.
+            # Sea creature settings and object relations are combined for sake of making sense in output. Feel free
+            # to change this if you wish.
 
             "sea": ['in the high seas', 'in an underwater landscape', 'in a coral reef', 'in an underwater trench',
                     'in the ocean', 'in a giant lake', 'in the ocean by an island', 'underwater beneath a ship',
@@ -168,7 +169,8 @@ prompts = {
                      'colosseum', 'roller coaster', 'palace', 'bridge', 'tundra', 'aquarium', 'hallway',
                      'military base'],
 
-            # Sea object settings and object relations are combined for sake of making sense in output. Feel free to change this if you wish.
+            # Sea object settings and object relations are combined for sake of making sense in output. Feel free to
+            # change this if you wish.
 
             "sea": ['in a stormy ocean', 'underwater', 'in the high seas', 'in a large river', 'docked at port',
                     'in battle at sea', 'outside of an island', 'on the water near land', 'in the Arctic Ocean',
@@ -232,18 +234,19 @@ prompts = {
                    'intense shadows', 'slow motion', 'reflections', 'detailed face', 'animecore', 'astrophotography',
                    'biomechanical', 'darkwave', 'deathpunk', 'glitchcore', 'glowwave', 'holographic', 'beautifully lit',
                    'technopunk', 'sci-fi', 'crystalline', 'movie still', 'animation', '3d', '2d', 'claymation',
-                   'woodcut painting', 'charcoal sketch', 'low poly', 'blender render', 'isometric',],
+                   'woodcut painting', 'charcoal sketch', 'low poly', 'blender render', 'isometric', ],
 
         "genmetas": ['realistic', '8k', '4k', 'detailed', 'hyperdetailed', 'sharp focus', 'masterpiece', 'absurdres',
                      'highres', 'professional', 'photorealism', 'studio quality', 'HQ', 'UHD', 'HDR', ],
 
     },
 }
-# Configure number of visual/style adjectives, style modifiers, and quality modifiers to tack on after the main component of the prompt
+# Configure number of visual/style adjectives, style modifiers, and quality modifiers to tack on after the main
+# component of the prompt
 numadjectives = 3
 numstyles = 3
 numquality = 4
-usepromptmatrix = False
+usepromptmatrix = True
 
 
 def main(prompts):
@@ -336,7 +339,7 @@ def creaprompt(prompts):
 
 def giveprompt(prompts, prompt, numstyles, numquality):
     # Add all the styles and quality words to the prompt, and if prompt matrix is enabled use | instead of , for styles.
-    if usepromptmatrix == False:
+    if not usepromptmatrix:
         prompt += ', '.join(rn.sample(prompts["vismodifiers"]["styles"], numstyles)) + ', ' + ', '.join(
             rn.sample(prompts["vismodifiers"]["genmetas"], numquality))
     else:
@@ -359,7 +362,8 @@ def changesettings():
     while changing_settings:
         setting_to_change = input(
             "\nEnter the number corresponding to the setting you want to change; '1' for the number of adjectives, "
-            "'2' for the number of styles, '3' for quality modifiers, or '4' to use or disable A111 prompt matrix for style phrases: ")
+            "'2' for the number of styles, '3' for quality modifiers, or '4' to use or disable A111 prompt matrix for "
+            "style phrases: ")
         if setting_to_change == '1':
             inputting = True
             while inputting:
@@ -385,18 +389,18 @@ def changesettings():
             inputting = True
             while inputting:
                 setting_value = input("Enter t (true) or f (false): ")
-                if (setting_value == 't'):
+                if setting_value == 't':
                     setting_value = True
-                    #Re.sub interferes with multiple of the same variable assignments, so this extra assignment is a workaround
+                    # Re.sub interferes with multiple of the same variable assignments, so this extra assignment is a workaround
                     usepromptmatrix = setting_value
-                    #The assignment string in this argument will change every time user changes setting, but won't affect anything
-                    script = re.sub(f"usepromptmatrix = False", f"usepromptmatrix = {setting_value}", script)
-                elif (setting_value == 'f'):
+                    # The assignment string in this argument will change every time user changes setting, but won't affect anything
+                    script = re.sub(f"usepromptmatrix = True", f"usepromptmatrix = {setting_value}", script)
+                elif setting_value == 'f':
                     setting_value = False
-                    #Re.sub interferes with multiple of the same variable assignments, so this extra assignment is a workaround
+                    # Re.sub interferes with multiple of the same variable assignments, so this extra assignment is a workaround
                     usepromptmatrix = setting_value
-                    #The assignment string in this argument will change every time user changes setting, but won't affect anything
-                    script = re.sub(f"usepromptmatrix = False", f"usepromptmatrix = {setting_value}", script)
+                    # The assignment string in this argument will change every time user changes setting, but won't affect anything
+                    script = re.sub(f"usepromptmatrix = True", f"usepromptmatrix = {setting_value}", script)
                 inputting = False
         with open(__file__, "w") as f:
             f.write(script)
