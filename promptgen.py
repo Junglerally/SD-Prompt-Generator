@@ -242,7 +242,7 @@ prompts = {
     },
 }
 # Configure number of visual/style adjectives, style modifiers, and quality modifiers to tack on after the main
-# component of the prompt
+# component of the prompt. Default is 3 adjectives, 3 style modifiers, 4 quality modifiers, and promptmatrix False.
 numadjectives = 3
 numstyles = 3
 numquality = 4
@@ -357,6 +357,7 @@ def changesettings():
     global numquality
     global usepromptmatrix
     changing_settings = True
+    #Opening currently-running script in read mode and saving as a string assigned to variable so text can be modified 
     with open(__file__, "r") as f:
         script = f.read()
     while changing_settings:
@@ -394,14 +395,17 @@ def changesettings():
                     # Re.sub interferes with multiple of the same variable assignments, so this extra assignment is a workaround
                     usepromptmatrix = setting_value
                     # The assignment string in this argument will change every time user changes setting, but won't affect anything
-                    script = re.sub(f"usepromptmatrix = True", f"usepromptmatrix = {setting_value}", script)
+                    # as long as we remember to reset the usepromptmatrix setting using the script after testing
+                    script = re.sub(f"usepromptmatrix = False", f"usepromptmatrix = {setting_value}", script)
                 elif setting_value == 'f':
                     setting_value = False
                     # Re.sub interferes with multiple of the same variable assignments, so this extra assignment is a workaround
                     usepromptmatrix = setting_value
                     # The assignment string in this argument will change every time user changes setting, but won't affect anything
+                    # as long as we remember to reset the usepromptmatrix setting using the script after testing
                     script = re.sub(f"usepromptmatrix = True", f"usepromptmatrix = {setting_value}", script)
                 inputting = False
+        #Writing currently-running script to save changes from re.sub
         with open(__file__, "w") as f:
             f.write(script)
         print('\nCURRENT SETTINGS \nAdjectives:', numadjectives, '\nStyles:', numstyles, '\nQuality modifiers:',
