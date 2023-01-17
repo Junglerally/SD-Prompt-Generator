@@ -4,11 +4,11 @@ prompts = {
 
     "adjectives": {
 
-        "visadjcts": ['pretty', 'relaxing', 'calm', 'quiet', 'wonderful', 'nice', 'incredible', 'amazing', 'cozy', 'beautiful', 'ominous', 'gloomy', 'post-apocalyptic', 'warm', 'stunning', 'breathtaking', 'fascinating', 'peaceful', 'surreal', 'celestial', 'ancient', 'ethereal', 'dramatic', 'horrific', 'terrifying', 'emotional', 'dystopian', 'dark', 'magical', 'psychedelic', 'apocalyptic', 'fantasy', 'dark fantasy', 'alien', 'otherworldly', 'foggy', 'Victorian', 'trippy', 'desolate', 'eldritch', 'gothic', 'futuristic', 'snowy', 'fantastical', 'lush', 'mysterious', 'icy', 'fiery', 'grand', 'western', 'bright', 'fair', 'filthy', 'pleasant', 'glamorous', 'quaint', 'colorful', 'wild', 'magnificent', ],
+        "visadjcts": ['pretty', 'relaxing', 'calm', 'quiet', 'wonderful', 'nice', 'incredible', 'amazing', 'cozy', 'beautiful', 'ominous', 'gloomy', 'post-apocalyptic', 'warm', 'stunning', 'breathtaking', 'fascinating', 'peaceful', 'surreal', 'celestial', 'ancient', 'ethereal', 'dramatic', 'horrific', 'terrifying', 'emotional', 'dystopian', 'dark', 'magical', 'psychedelic', 'apocalyptic', 'fantasy', 'dark fantasy', 'alien', 'otherworldly', 'foggy', 'Victorian', 'trippy', 'desolate', 'eldritch', 'gothic', 'futuristic', 'snowy', 'fantastical', 'lush', 'mysterious', 'icy', 'flaming', 'grand', 'western', 'bright', 'fair', 'pleasant', 'quaint', 'colorful', 'wild', 'magnificent', 'sooty', 'gritty', 'grim',],
 
-        "objadjcts": ['futuristic', 'glowing', 'ornate', 'scuffed', 'pristine', 'rustic', 'floral', 'intricate', 'smooth', 'shiny', 'dusty', 'dirty', 'colorful', 'high-tech', 'modern', 'cute', 'magical', 'ancient', 'detailed', 'refined', 'unique', 'vintage', 'polished', 'elegant', 'sophisticated', 'complex', 'damaged', 'worn', 'weathered', 'archaic', 'stealthy', 'miniscule', 'small', 'medium', 'large', 'massive', 'humongous', 'bulbous', 'chunky', 'flat', 'rugged', 'purple', 'red', 'blue', 'green', 'yellow', 'black', 'white', 'gray', 'pink', 'orange', 'neon', 'powerful', 'long', 'wide', ],
+        "objadjcts": ['futuristic', 'glowing', 'ornate', 'scuffed', 'pristine', 'rustic', 'floral', 'intricate', 'smooth', 'shiny', 'dusty', 'dirty', 'colorful', 'high-tech', 'modern', 'cute', 'magical', 'ancient', 'detailed', 'refined', 'unique', 'vintage', 'polished', 'elegant', 'sophisticated', 'complex', 'damaged', 'worn', 'weathered', 'archaic', 'stealthy', 'miniscule', 'small', 'medium', 'large', 'massive', 'humongous', 'bulbous', 'chunky', 'flat', 'rugged', 'purple', 'red', 'blue', 'green', 'yellow', 'black', 'white', 'gray', 'pink', 'orange', 'neon', 'powerful', 'long', 'wide', 'filthy',],
 
-        "charadjcts": ['armored', 'heavily armored', 'divine', 'cyborg', 'medieval', 'steampunk', 'stylish', 'angelic', 'female', 'male', 'confused', 'lost', 'old', 'young', 'attractive', 'intimidating', 'battered', 'cute', 'modern', 'dirty', 'scarred', 'determined', 'bearded', 'caped', 'shrouded', 'Latin American', 'Caucasian', 'African', 'Indian', 'Arab', 'Asian', 'happy', 'overjoyed', 'lone', 'joyful', 'sad', 'pensive', 'evil', 'bloody', 'robed', 'fashionable', 'tough', 'masked', 'tattooed', 'crazy', 'shadowed', 'elegant', 'stealthy', 'western', 'cute', 'beautiful', 'pretty', 'gorgeous', 'mature', 'chic', 'classy', 'ethereal', 'buff', 'chiseled', 'petite', 'goth', 'old-fashioned', 'bald', 'dapper', 'elven', 'dwarven', ],
+        "charadjcts": ['armored', 'heavily armored', 'divine', 'cyborg', 'medieval', 'steampunk', 'stylish', 'angelic', 'female', 'male', 'confused', 'lost', 'old', 'young', 'attractive', 'intimidating', 'battered', 'cute', 'modern', 'dirty', 'scarred', 'determined', 'bearded', 'caped', 'shrouded', 'Latin American', 'Caucasian', 'African', 'Indian', 'Arab', 'Asian', 'happy', 'overjoyed', 'lone', 'joyful', 'sad', 'pensive', 'evil', 'bloody', 'robed', 'fashionable', 'tough', 'masked', 'tattooed', 'crazy', 'shadowed', 'elegant', 'stealthy', 'western', 'beautiful', 'pretty', 'gorgeous', 'mature', 'chic', 'classy', 'ethereal', 'buff', 'chiseled', 'petite', 'goth', 'old-fashioned', 'bald', 'dapper', 'elven', 'dwarven', 'filthy', 'glamorous',],
 
     },
 
@@ -18,13 +18,13 @@ prompts = {
 
             "people": ['man', 'woman', 'girl', 'boy', 'assassin', 'bounty hunter', 'knight', 'stormtrooper', 'robot', 'soldier', 'man', 'woman', 'samurai', 'vampire', 'catgirl', 'wolf girl', 'cowgirl', 'cowboy', 'jedi', 'warrior', 'sorcerer', 'human woman', 'human man', 'human girl', 'human boy', 'prince', 'princess', 'king', 'queen', 'god', 'goddess', 'demigod', 'survivor', 'villain', 'hero', 'traveler', 'spaceman', 'space marine', 'explorer', 'wayfarer', 'chef', 'swordsman', 'scout', 'schoolgirl', 'schoolboy', 'motorcyclist', 'hunter', 'demon', 'angel', 'pilot', 'crewman', 'fox girl', 'wizard', 'emperor', 'viking', 'ninja', 'alien', 'businessman', 'guard', 'operative', 'scientist', 'police officer', 'serial killer', 'cultist', 'romantic couple', 'friends', 'spirit', 'crewwoman', 'Little Red Riding Hood', 'chancellor', 'witch', 'pirate', 'captain', 'gamer', 'military general', 'farmer', 'archer', 'athlete', 'baker', 'librarian', 'ballerina', 'blacksmith', 'butler', 'dictator', 'doctor', 'DJ', 'musician', 'fisherman', 'firefighter', 'hobo', 'detective', 'spy', 'jester', 'magician', 'maid', 'nurse', 'lifeguard', 'student', 'surgeon', 'treasure hunter', 'waiter', 'valkyrie', 'angel', ],
 
-            "charobjects": ['knife', 'weapon', 'flower', 'plushie', 'mirror', 'glass', 'cape', 'backpack', 'dress', 'suit', 'bodysuit', 'artifact', 'map', 'fighter', 'sword', 'carbine', 'smartphone', 'book', 'walking stick', 'drink', 'lantern', 'mask', 'gas mask', 'hat', 'tattoos', 'guitar', 'crystal', 'gem', 'ring', 'jewelry', 'bandana', 'amulet', 'shield', 'pouch', 'headphones', 'gloves', 'scarf', 'tophat', 'monocle', 'scroll', 'dagger', 'skirt', 'tiara', 'crown', 'staff', 'wand', 'belt', 'cell phone', 'broom', 'pitchfork', ],
+            "charobjects": ['knife', 'weapon', 'flower', 'plushie', 'mirror', 'glass', 'cape', 'backpack', 'dress', 'suit', 'bodysuit', 'artifact', 'map', 'sword', 'carbine', 'smartphone', 'book', 'walking stick', 'drink', 'lantern', 'mask', 'gas mask', 'hat', 'tattoos', 'guitar', 'crystal', 'gem', 'ring', 'jewelry', 'bandana', 'amulet', 'shield', 'pouch', 'headphones', 'gloves', 'scarf', 'tophat', 'monocle', 'scroll', 'dagger', 'skirt', 'tiara', 'crown', 'staff', 'wand', 'belt', 'cell phone', 'broom', 'pitchfork', ],
 
         },
         
         "creatures": {
 
-            "land_creatures": ['dog', 'cat', 'frog', 'Oni', 'golem', 'unicorn', 'pegasus', 'basilisk', 'hellhound', 'gnome', 'fairy', 'skinwalker', 'bigfoot', 'hamster', 'eagle', 'raccoon', 'opossum', 'tiger', 'panther', 'wendigo', 'dwarf', 'goblin', 'chimera', 'kitsune', 'bunny', 'serpent', 'horse', 'jinn', 'minotaur', 'mammoth', 'deer', 'Anubis', 'monster', 'werewolf', 'elephant', 'ogre', 'monkey', 'bear', 'giraffe', 'hedgehog', 'hamster', 'meerkat', 'naga', ],
+            "land_creatures": ['dog', 'cat', 'frog', 'Oni', 'golem', 'unicorn', 'pegasus', 'basilisk', 'hellhound', 'gnome', 'skinwalker', 'bigfoot', 'hamster', 'eagle', 'raccoon', 'opossum', 'tiger', 'panther', 'wendigo', 'dwarf', 'goblin', 'chimera', 'kitsune', 'bunny', 'serpent', 'horse', 'jinn', 'minotaur', 'mammoth', 'deer', 'Anubis', 'monster', 'werewolf', 'elephant', 'ogre', 'monkey', 'bear', 'giraffe', 'hedgehog', 'meerkat', 'naga', ],
 
             "air_creatures": ['phoenix', 'hawk', 'eagle', 'bat', 'owl', 'hummingbird', 'bird', 'bee', 'bumblebee', 'dragon', 'griffin', 'raven', 'crow', 'wyvern', 'pegasus', 'harpy', 'fairy', ],
 
@@ -100,12 +100,12 @@ prompts = {
 numadjectives = 3
 numstyles = 3
 numquality = 4
-usepromptmatrix = False;
+usepromptmatrix = False
 
 def main(prompts):
     while True:
-        #List of random visual impression adjectives from above number
-        prompt_type = input("Enter '1' for character-focused prompt, '2' for object-focused prompt, '3' for creature-focused prompt, '4' to change prompt settings, or '0' to stop the script. : ")
+        print()
+        prompt_type = input("Enter '1' for character-focused prompt, '2' for object-focused prompt, '3' for creature-focused prompt, '4' to change prompt settings, or '0' to stop the script: ")
         if prompt_type == '1':
             again = True
             while again: 
@@ -129,7 +129,6 @@ def main(prompts):
                 again = repeat == ''
         elif prompt_type == '4':
             changesettings()
-
         elif prompt_type == '0':
             break
 
@@ -191,42 +190,43 @@ def changesettings():
     global numquality
     global usepromptmatrix
 
-    changing_settings = True;
+    changing_settings = True
     while changing_settings:
-            setting_to_change = input("Enter the number corresponding to the setting you want to change; '1' for the number of adjectives, '2' for the number of styles, '3' for quality modifiers, or 4 to use prompt matrix : ")
+            setting_to_change = input("\nEnter the number corresponding to the setting you want to change; '1' for the number of adjectives, '2' for the number of styles, '3' for quality modifiers, or '4' to use prompt matrix: \n")
             if setting_to_change == '1':
                 inputting = True
                 while inputting:
-                    setting_value = int(input("Enter a value : "))
+                    setting_value = int(input("Enter a value: "))
                     numadjectives = setting_value
                     inputting = False
 
             elif setting_to_change == '2':
                 inputting = True
                 while inputting:
-                    setting_value = int(input("Enter a value : "))
+                    setting_value = int(input("Enter a value: "))
                     numstyles = setting_value
                     inputting = False
 
             elif setting_to_change == '3':
                 inputting = True
                 while inputting:
-                    setting_value = int(input("Enter a value : "))
+                    setting_value = int(input("Enter a value: "))
                     numquality = setting_value
                     inputting = False
 
             elif setting_to_change == '4':
                 inputting = True
                 while inputting:
-                    setting_value = input("Enter t (true) or f (false) : ")
+                    setting_value = input("Enter t (true) or f (false): ")
                     if(setting_value == 't'):
                         usepromptmatrix = True
                     elif(setting_value == 'f'):
                         usepromptmatrix = False
                     inputting = False
 
-            print('Adjectives: ', numadjectives, ' , Styles: ', numstyles, ' , Quality modifiers: ', numquality, ' , Use prompt matrix: ', usepromptmatrix)
+            print('\nCURRENT SETTINGS \nAdjectives:', numadjectives, '\nStyles:', numstyles, '\nQuality modifiers:', numquality, '\nUse A111 prompt matrix for style phrases:', usepromptmatrix)
             repeat = input("Press 'Enter' to change another setting, or any other key + 'Enter' to return: ")
+            print()
             changing_settings = repeat == ''
     
 
