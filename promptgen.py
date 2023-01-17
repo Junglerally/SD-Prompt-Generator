@@ -100,11 +100,12 @@ prompts = {
 numadjectives = 3
 numstyles = 3
 numquality = 4
+usepromptmatrix = False;
 
 def main(prompts):
     while True:
         #List of random visual impression adjectives from above number
-        prompt_type = input("Enter '1' for character-focused prompt, '2' for object-focused prompt, '3' for creature-focused prompt, or '0' to stop the script. If you wish to change prompt settings, enter 's' : ")
+        prompt_type = input("Enter '1' for character-focused prompt, '2' for object-focused prompt, '3' for creature-focused prompt, '4' to change prompt settings, or '0' to stop the script. : ")
         if prompt_type == '1':
             again = True
             while again: 
@@ -126,7 +127,7 @@ def main(prompts):
                 giveprompt(prompts, prompt, numstyles, numquality)
                 repeat = input("Press 'Enter' for another creature-focused prompt, or any other key + 'Enter' to return: ")
                 again = repeat == ''
-        elif prompt_type == 's':
+        elif prompt_type == '4':
             changesettings()
 
         elif prompt_type == '0':
@@ -173,7 +174,13 @@ def creaprompt(prompts):
             return prompt
 
 def giveprompt(prompts, prompt, numstyles, numquality):
-            prompt += ', '.join(rn.sample(prompts["vismodifiers"]["styles"], numstyles)) + ', ' + ', '.join(rn.sample(prompts["vismodifiers"]["genmetas"], numquality))
+            #Add all the styles and quality words to the prompt, and if prompt matrix is enabled use | instead of , for styles.
+            if usepromptmatrix == False:
+                prompt += ', '.join(rn.sample(prompts["vismodifiers"]["styles"], numstyles)) + ', ' + ', '.join(rn.sample(prompts["vismodifiers"]["genmetas"], numquality))
+            else:
+                prompt += ', '.join(rn.sample(prompts["vismodifiers"]["genmetas"], numquality)) + ' | ' + ' | '.join(rn.sample(prompts["vismodifiers"]["styles"], numstyles))
+              
+            #Print the prompt
             print()
             print(prompt)
             print()
@@ -182,10 +189,11 @@ def changesettings():
     global numadjectives
     global numstyles
     global numquality
+    global usepromptmatrix
 
     changing_settings = True;
     while changing_settings:
-            setting_to_change = input("Enter the number corresponding to the setting you want to change; '1' for the number of adjectives, '2' for the number of styles, and '3' for quality modifiers : ")
+            setting_to_change = input("Enter the number corresponding to the setting you want to change; '1' for the number of adjectives, '2' for the number of styles, '3' for quality modifiers, or 4 to use prompt matrix : ")
             if setting_to_change == '1':
                 inputting = True
                 while inputting:
@@ -207,7 +215,17 @@ def changesettings():
                     numquality = setting_value
                     inputting = False
 
-            print('Adjectives: ', numadjectives, ' , Styles: ', numstyles, ' , Quality modifiers: ', numquality)
+            elif setting_to_change == '4':
+                inputting = True
+                while inputting:
+                    setting_value = input("Enter t (true) or f (false) : ")
+                    if(setting_value == 't'):
+                        usepromptmatrix = True
+                    elif(setting_value == 'f'):
+                        usepromptmatrix = False
+                    inputting = False
+
+            print('Adjectives: ', numadjectives, ' , Styles: ', numstyles, ' , Quality modifiers: ', numquality, ' , Use prompt matrix: ', usepromptmatrix)
             repeat = input("Press 'Enter' to change another setting, or any other key + 'Enter' to return: ")
             changing_settings = repeat == ''
     
