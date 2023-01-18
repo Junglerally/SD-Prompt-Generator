@@ -3,8 +3,6 @@ import gradio as gr
 
 from promptgen import prompts
 
-# Configure number of visual/style adjectives, style modifiers, and quality modifiers to tack on after the main component of the prompt
-
 def charprompt(prompts, numadj):
             listadj = ', '.join(rn.sample(prompts["adjectives"]["visadjcts"], numadj))
             character = rn.choice(prompts["adjectives"]["charadjcts"]) + ' ' + rn.choice(prompts["subjects"]["characters"]["people"]) 
