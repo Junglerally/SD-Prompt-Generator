@@ -30,7 +30,6 @@ prompts = {
                        'tattooed', 'crazy', 'shadowed', 'elegant', 'stealthy', 'western', 'beautiful', 'pretty',
                        'gorgeous', 'mature', 'chic', 'classy', 'ethereal', 'buff', 'chiseled', 'petite', 'goth',
                        'old-fashioned', 'bald', 'dapper', 'elven', 'dwarven', 'filthy', 'glamorous', ],
-
     },
 
     "subjects": {
@@ -94,7 +93,6 @@ prompts = {
                       'futuristic military spaceship', 'futuristic exploration spaceship', 'luxury spaceship',
                       'interstellar drone', 'alien ship', 'X-Wing', 'Millenium Falcon', 'The Discovery', 'Lunar Lander',
                       'Voyager II', 'voyager probe', 'space telescope', 'International Space Station', ],
-
         },
 
     },
@@ -151,7 +149,6 @@ prompts = {
             "sea": ['in the high seas', 'in an underwater landscape', 'in a coral reef', 'in an underwater trench',
                     'in the ocean', 'in a giant lake', 'in the ocean by an island', 'underwater beneath a ship',
                     'in the deep ocean', 'in the Arctic Ocean', ],
-
         },
 
         "object_sets": {
@@ -199,7 +196,6 @@ prompts = {
                       'exotic planet in outer space', 'exotic star in outer space', 'exotic star system in outer space',
                       'artificial planet in outer space', 'alien megastructure in outer space',
                       'megastructure in outer space', 'battle in outer space', 'orbital bombardment', ],
-
         },
 
         "subjrelations": {
@@ -218,7 +214,7 @@ prompts = {
     },
 
     "vismodifiers": {
-
+    
         "styles": ['oil painting', 'minimalistic', 'natural', 'colored', '35mm', 'award-winning photography',
                    'cinematic lighting', 'limited palette', 'pastel colors', 'cyberpunk', 'render',
                    'rendered in unreal engine', 'photo', 'glitch art', 'space art', 'high contrast', 'low contrast',
@@ -283,7 +279,6 @@ def main(prompts):
         elif prompt_type == '0':
             break
 
-
 def charprompt(prompts):
     listadj = ', '.join(rn.sample(prompts["adjectives"]["visadjcts"], numadjectives))
     character = rn.choice(prompts["adjectives"]["charadjcts"]) + ' ' + rn.choice(
@@ -294,7 +289,6 @@ def charprompt(prompts):
         prompts["adjectives"]["visadjcts"]) + ' ' + rn.choice(prompts["settings"]["people_sets"])
     prompt = character + ' ' + 'with a ' + obj + ' ' + setting + ', ' + listadj + ', '
     return prompt
-
 
 def objprompt(prompts):
     listadj = ', '.join(rn.sample(prompts["adjectives"]["visadjcts"], numadjectives))
@@ -317,7 +311,6 @@ def objprompt(prompts):
     prompt = mainobject + ' ' + setting + ', ' + listadj + ', '
     return prompt
 
-
 def creaprompt(prompts):
     listadj = ', '.join(rn.sample(prompts["adjectives"]["visadjcts"], numadjectives))
     # Picks random type of creature
@@ -336,7 +329,6 @@ def creaprompt(prompts):
     prompt = creature + ' ' + setting + ', ' + listadj + ', '
     return prompt
 
-
 def giveprompt(prompts, prompt, numstyles, numquality):
     # Add all the styles and quality words to the prompt, and if prompt matrix is enabled use | instead of , for styles.
     if not usepromptmatrix:
@@ -349,7 +341,6 @@ def giveprompt(prompts, prompt, numstyles, numquality):
     print()
     print(prompt)
     print()
-
 
 def changesettings():
     global numadjectives

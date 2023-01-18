@@ -33,6 +33,13 @@ To add or remove phrases, edit the script(s). The structure is pretty straightfo
 
 Naturally, certain phrases will be better understood by different models. For instance, "catgirl" and "splash paint art" are represented much better in anime-based models than models that focus more on realistic art.
 
+
+To use the Webui script, you will need to first type 
+	
+	pip install gradio
+
+Then use the steps above to start the script.
+
 ## The prompts
 
 This script provides a variety of randomly-selected adjectives, subjects (characters, objects, creatures), settings (locations), and visual style and quality phrases. The general adjectives add randomness to the output, but also can influence the overall visual impression of an image similar to the styles. The usefulness of "quality prompts" (e.g. realistic, masterpiece, professional) despite their widespread application is debatable, but they are included nonetheless as they sometimes improve the detail of outfits and sense of depth.
