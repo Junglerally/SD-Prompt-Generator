@@ -1,7 +1,7 @@
 import random as rn
 import gradio as gr
 
-from promptgen import prompts
+from promptwords import prompts
 
 def charprompt(prompts, numadj):
             listadj = ', '.join(rn.sample(prompts["adjectives"]["visadjcts"], numadj))
@@ -64,17 +64,15 @@ def createprompt(prompt_type, numadj, numstyles, numquality, promptmatrix):
 
     return prompt
 
-demo = gr.Interface(
+promptgen = gr.Interface(
     createprompt,
     [
-        gr.Dropdown(["Character", "Object", "Creature"]), #Type dropdown
+        gr.Dropdown(["Character", "Object", "Creature"], value="Character"), #Type dropdown
         gr.Slider(0, 10, value=3, step=1), #Adjectives slider
         gr.Slider(0, 10, value=3, step=1), #Styles slider
         gr.Slider(0, 10, value=4, step=1), #Quality slider
         gr.Checkbox(value=False, label="Prompt matrix for styles?") #Prompt matrix checkbox
     ],
     "text")
-demo.launch()
+promptgen.launch()
 
-if __name__ == "__main__":
-    main(prompts)
