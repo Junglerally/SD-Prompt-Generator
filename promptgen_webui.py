@@ -41,7 +41,13 @@ def creaprompt(prompts, numadj):
                 setting = rn.choice(prompts["settings"]["subjrelations"]["air_creatures"]) + ' ' + rn.choice(prompts["adjectives"]["visadjcts"]) + ' ' + rn.choice(prompts["settings"]["creature_sets"]["air"])
             creature = rn.choice(prompts["adjectives"]["visadjcts"]) + ' ' + rn.choice(prompts["subjects"]["creatures"][randcreatype]) 
             prompt = creature + ' ' + setting + ', ' + listadj + ', '
-            return prompt    
+            return prompt   
+            
+def settingprompt(prompts, numadj):
+            listadj = ', '.join(rn.sample(prompts["adjectives"]["visadjcts"], numadj))
+            setting = rn.choice(prompts["settings"]["all"])
+            prompt = 'A ' + rn.choice(prompts["adjectives"]["visadjcts"]) + ' ' + setting + ', ' + listadj + ', '
+            return prompt
 
 def createprompt(prompt_type, numadj, numstyles, numquality, promptmatrix):
     global prompts
@@ -55,6 +61,9 @@ def createprompt(prompt_type, numadj, numstyles, numquality, promptmatrix):
     elif(prompt_type == "Creature"):
         prompt = creaprompt(prompts, numadj)
 
+    elif(prompt_type == "Setting"):
+        prompt = settingprompt(prompts, numadj)
+
     if(promptmatrix):
         prompt += ', '.join(rn.sample(prompts["vismodifiers"]["genmetas"], numquality)) + ' | ' + ' | '.join(rn.sample(prompts["vismodifiers"]["styles"], numstyles))
 
@@ -67,7 +76,7 @@ def createprompt(prompt_type, numadj, numstyles, numquality, promptmatrix):
 promptgen = gr.Interface(
     createprompt,
     [
-        gr.Dropdown(["Character", "Object", "Creature"], value="Character"), #Type dropdown
+        gr.Dropdown(["Character", "Object", "Creature", "Setting"], value="Character"), #Type dropdown
         gr.Slider(0, 10, value=3, step=1), #Adjectives slider
         gr.Slider(0, 10, value=3, step=1), #Styles slider
         gr.Slider(0, 10, value=4, step=1), #Quality slider
@@ -75,4 +84,5 @@ promptgen = gr.Interface(
     ],
     "text")
 promptgen.launch()
+
 
