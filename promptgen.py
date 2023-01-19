@@ -14,7 +14,7 @@ def main(prompts):
     while True:
         prompt_type = input(
             "\nEnter '1' for character-focused prompt, '2' for object-focused prompt, '3' for creature-focused prompt, "
-            "'4' to change prompt settings, or '0' to stop the script: ")
+            "'4' for a location prompt, '5' to change prompt settings, or '0' to stop the script: ")
         if prompt_type == '1':
             again = True
             while again:
@@ -40,6 +40,14 @@ def main(prompts):
                     "Press 'Enter' for another creature-focused prompt, or any other key + 'Enter' to return: ")
                 again = '' == repeat
         elif prompt_type == '4':
+            again = True
+            while again:
+                prompt = settingprompt(prompts)
+                giveprompt(prompts, prompt, numstyles, numquality)
+                repeat = input(
+                    "Press 'Enter' for another location prompt, or any other key + 'Enter' to return: ")
+                again = '' == repeat            
+        elif prompt_type == '5':
             changesettings()
         elif prompt_type == '0':
             break
@@ -92,6 +100,12 @@ def creaprompt(prompts):
     creature = rn.choice(prompts["adjectives"]["visadjcts"]) + ' ' + rn.choice(
         prompts["subjects"]["creatures"][randcreatype])
     prompt = creature + ' ' + setting + ', ' + listadj + ', '
+    return prompt
+
+def settingprompt(prompts):
+    listadj = ', '.join(rn.sample(prompts["adjectives"]["visadjcts"], numadjectives))
+    setting = rn.choice(prompts["settings"]["all"])
+    prompt = 'A ' + rn.choice(prompts["adjectives"]["visadjcts"]) + ' ' + setting + ', ' + listadj + ', '
     return prompt
 
 def giveprompt(prompts, prompt, numstyles, numquality):
